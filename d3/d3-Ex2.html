@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>First barchart</title>
+     <script src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+    <style>
+      .bar{
+        height: 10px;
+        background-color: blue;
+        border-bottom: 1px solid white;
+      }
+    </style>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <script>
+    var data = [10, 30, 60];
+    d3.selectAll('.bar').data(data)
+      .style('width', function(d){
+        return d + '%' 
+      });
+    </script>
+  </body>
+</html>

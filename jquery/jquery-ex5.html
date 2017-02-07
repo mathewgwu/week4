@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Data Visualization</title>
+</head>
+<body>
+
+<script id=blogTemplate>
+	<h2> {{title}} </h2>
+	<img src={{thumbnail}} alt={{title}}>
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+	var content = [
+		{
+			title: 'My first Area Graph',
+			thumbnail: 'AreaGraph.png',
+		},
+		{
+			title: 'My second Bar Chart',
+			thumbnail: 'BarChart.png',
+		},
+		{
+			title: 'My third Histogram ',
+			thumbnail: 'Histogram.png',
+		}
+	],
+		template = $.trim( $('#blogTemplate').html() ),
+		frag = '';
+
+
+
+	$.each( content, function( index, obj ) {
+		frag +=
+			template.replace( /{{title}}/ig, obj.title )
+					.replace( /{{thumbnail}}/ig, obj.thumbnail );		
+	});
+
+	$('body').append(frag);
+
+})();
+
+</script>
+</body>
+</html>

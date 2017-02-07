@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<style>
+	.container { color: red;}
+	.another{color:green;}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<h1>Welcome to My Website </h1>
+	<p>
+	Data visualization is the presentation of data in a pictorial or graphical format. It enables decision makers to see analytics presented visually, so they can grasp difficult concepts or identify new patterns. A primary goal of data visualization is to communicate information clearly and efficiently via statistical graphics, plots and information graphics. Numerical data may be encoded using dots, lines, or bars, to visually communicate a quantitative message.
+
+	<div class="container">
+		<ul class="emphasis container">
+			<li>item</li>
+			<li>item 2</li>
+			<li>item 2</li>
+			<li>item 4</li>
+			<li>item 5</li>
+			<li>
+				<ul>
+					<li>hello from the nest.</li>
+				</ul
+
+			</li>
+		</ul>
+		<ul class="another container">
+			<li>item</li>
+			<li>item 2</li>
+			<li>item 2</li>
+			<li>item 4</li>
+			<li>item 5</li>
+			<li>
+				<ul>
+					<li>hello from the nest.</li>
+					<li>second nested list.</li>
+				</ul
+
+			</li>
+		</ul>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+
+<script>
+	 $('ul.emphasis').children('li').eq(3)
+		.prev().text('added with jQuery');
+
+	// console.log($('ul').parents('.container'));
+	// console.log($('ul').closest('.container'));
+	$('ul.another').find('li').last().text('added with jquery');
+</script>
+
+</body>
+</html>
+
+
+
+
+
+

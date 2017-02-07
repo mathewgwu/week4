@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Visualization - Javascript Fundamentals</title>
+    <style>
+        body { padding: 30px; margin: 0; background-color: #f9f4e6; color: #3d4753; }
+        h1, h2 { font-family: 'Adelle Basic'; }
+    </style>
+</head>
+
+<body>
+  <header>
+        <h1 class="heading" id="mainHeading">JavaScript Fundamentals</h1>
+        <h2 class="heading subHeading">George Washington - Data Visualization - JavaScript Fundamentals</h2>
+    </header> 
+  <a href="basics.html"> Basics</a> | <a href="strings.html">Strings</a> | <a href="arrays.html">Arrays</a>
+	<p>
+	 <a href="functions.html">Functions</a> | <a href="functions2.html">Functions 2</a> | <a href="functions3.html">Functions 3</a>
+	<p>
+	<a href="math.html"> Math</a> | <a href="regex.html">Regex</a> | <a href="objects.html">Objects</a>
+<h1>JavaScript Functions - Part2</h1>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(a, b) {
+    return a * b;
+}
+
+//Greetings..
+function getGreeting(hour) {
+var msg;
+if (hour < 12) {
+msg = "Good Morning!";
+} else if (hour < 17) {
+msg = "Good Afternoon!";
+} else {
+msg = "Good Evening!";
+}
+return msg;
+}
+
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
+
+</body>
+</html>

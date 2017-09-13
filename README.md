@@ -7,10 +7,6 @@ Tools for doing development work
 ----------------------------------
 https://atom.io/
 
-https://www.sublimetext.com/3
-
-http://brackets.io/
-
 https://notepad-plus-plus.org/
 
 For debugging
@@ -20,14 +16,17 @@ https://developer.chrome.com/devtools
 Bootstarp
 ---------------------------------------
 http://getbootstrap.com/
+https://www.w3schools.com/bootstrap/default.asp
 
 Javacript, JQuery
 --------------------------------
-Object-Oriented JavaScript, 2nd Edition 
+Book- Object-Oriented JavaScript, 2nd Edition 
 
-JavaScript: The Good Parts 1st Edition by Douglas Crockford
+Book - JavaScript: The Good Parts 1st Edition by Douglas Crockford
 
 https://jquery.com/
+
+https://www.w3schools.com/js/default.asp
 
 http://www.w3schools.com/jquery/
 
@@ -45,7 +44,7 @@ https://d3js.org/
 
 HTML
 ----------------------------------------
-
+https://www.w3schools.com/html/default.asp
 http://html5demos.com/
 
 http://html5tutorial.net/
